@@ -1,0 +1,276 @@
+$colorFont:rgb(224, 149, 149);
+$sizefont:16px;
+$typefont:Verdana, Geneva, Tahoma, sans-serif;
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/*estilo en general para el cuerpo*/
+body{
+    padding: auto; 
+    min-height: 100%;
+    font-size: $sizefont;
+    font-family:$typefont;  
+    
+    background-size: cover;
+    color:$colorFont;
+   
+   
+}
+/*estilo aplicado barra de navegación index */
+nav{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    text-align:center;
+    font-style: $typefont;
+    color:$colorFont;
+    
+    img{
+    width: 100px;
+    height:100px;
+    border-radius:70px;
+}
+}
+.pie{
+        font-size: $sizefont;
+        color: rgb(232, 236, 226);
+        background-color: rgb(32, 32, 32);
+        grid-area: footer;
+}
+.container_1{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    font-size: $sizefont;
+    
+}
+.container_2{
+    background: rgb(243, 95, 26);
+}
+.contenido{
+    width: 90%;
+}
+
+.lateral{
+    padding: 40px;
+    &__contenido_lateral--barra{
+    font-family: cursive;
+    font-size: 25px;
+}
+}
+.carousel_slide{
+margin:0%;
+padding: 0%;
+}
+/*aplicando variables en sección quienes somos*/
+main{
+   padding:5px ;
+   margin-bottom: 20%;
+   justify-content: center;
+   text-align: center;        
+   .principal__nuestraHistoria--promo{
+    padding: 50px 50px;
+    text-align: justify;
+    color:rgb(17, 17, 17);
+   }
+}
+.container{
+    .row{
+        justify-content:flex-start;
+        align-items: center;
+    }
+    img{
+        
+        width: 45%;
+        border-radius: 45px;
+    }
+}
+iframe{
+     width:100;
+      height:50;
+       border-style:0;
+}
+.lead{
+    display: block;
+
+}
+/*estilos aplicados al footer de la pagina*/
+footer{
+    color:$colorFont;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;   
+}
+
+/*aplicación de grids en la sección de submenú-desayunos*/
+.encabezado{
+    grid-area: naveg;
+}
+.desa{
+    grid-area: main;
+}
+.titulo{
+    grid-area: footer;
+}
+.grilla{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "naveg"
+    "main"
+    "footer";
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 3fr;
+    align-items: center;
+}
+.promo{
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
+    font-size: 20px;
+}
+.galery_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.galery_item{
+    text-align:center;
+    padding:3%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galery_container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+
+}
+
+/*aplicación de grids en la sección de contact-formulario*/
+.reg{
+    text-align:justify;
+    display: block;
+}
+
+/* inicio aplicando extend en sección contact*/
+.registro {
+    display: block;
+    padding: 30px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    border-radius: 10px; 
+    width: 420px;  
+    background: rgb(243, 132, 6);
+    text-align: justify;
+    h3{
+        color:white
+    }
+    button{
+        @extend .registro;
+        width: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+label{
+    color:rgb(56, 52, 52); 
+    width: 100%;
+    background:rgb(240, 236, 236) ;
+}
+input{
+    @extend label;
+}
+/*cierre aplicando extend en sección contact*/
+
+/*aplicando media queri para distintos dispositivos-celulares */
+@media screen and (min-width:480px){
+    .container_2{
+        background:rgb(80, 212, 28);
+    }
+    .contenido,.contenido_lateral{
+        width: 50%  ;
+    }
+}
+/*aplicando media queri para distintos dispositivos-tablets */
+@media screen and (min-width:480px) and (max-width:780px){
+  
+   .contenido,.contenido_lateral{
+        width: 100%;
+    } 
+}
+/*aplicando media queri para distintos dispositivos-ordenadores de escritorio */
+@media screen and (min-width:780px) and (max-width:1024px){
+   .container_1{
+       height: 100px;
+    }
+    .contenido,.contenido_lateral{
+        width: 100%;
+    } 
+}
+/*aplicando transiciones al footer-mapa de la ubicación */
+.pie__divContenedor, h1, h2{
+    animation-duration: 0.3s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+/*aplicando SASS con variable y condicional en sección "desayunos.html" */
+$numero:15;
+.titulo{
+    @if $numero == 15{
+        font-family: cursive;
+        font-size: 25px;
+        color:rgb(70, 68, 68)
+    }
+    @else{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color:rgb(156, 29, 29)
+
+    } 
+}
+/*aplicando extend en el index*/
+$rifa:rgb(255, 136, 0);
+.sorteo {
+    color:rgb(248, 240, 239); 
+    background-color:$rifa;
+    padding: 10px;
+    margin: 80px;
+}
+/*aplicando extend en el index*/
+.sorteo_1{
+    @extend .sorteo;
+    background-color: darken($rifa, 30%);
+    font-style: oblique; 
+    font-size: $sizefont;
+}
+.sorteo_2{
+    @extend .sorteo_1;
+    background-color: darken($rifa, 40%);
+    font-style:inherit;
+}
+/*aplicando mixin en el index*/
+@mixin participa($colorLetra, $valorLetra, $colorFondo){
+    color:$colorLetra; 
+    background-color:$colorFondo;
+    font-size: $valorLetra;
+    padding: 10px;
+    margin: 80px;
+}
+h5{
+    @include participa(rgb(245, 223, 223), 30px, tomato)
+}
