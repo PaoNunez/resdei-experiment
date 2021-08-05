@@ -9,23 +9,28 @@ html {
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 /*estilo en general para el cuerpo*/
 body {
     min-height: 100%;
     font-size: $sizefont;
     font-family: $typefont;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../static/img/background.png);
+    background-image: url(../static/img/background.jpg);
+    background-attachment: fixed;
 }
+
 /*estilo aplicado barra de navegación index */
 nav {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     text-align: center;
     font-style: $typefont;
-    background: rgba(231, 154, 37, 0.938);
-    color: white;
+    background: rgba(182, 55, 33, 0.384);
+    
 
     img {
         width: 100px;
@@ -37,8 +42,8 @@ nav {
 .pie {
     padding: 2px;
     font-size: $sizefont;
-    color: rgb(42, 43, 40);
-    background-color: rgba(224, 132, 11, 0.945);
+    color: rgb(236, 238, 231);
+    background-color: rgba(114, 10, 2, 0.692);
     grid-area: footer;
 }
 .container_1 {
@@ -72,15 +77,22 @@ nav {
 }
 /*aplicando variables en sección quienes somos*/
 main {
-    padding: 5px;
     margin-bottom: 20%;
     justify-content: center;
     text-align: center;
-    .principal__nuestraHistoria--promo {
-        padding: 50px 50px;
-        text-align: justify;
-        color: rgb(17, 17, 17);
-    }
+    padding: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.principal__nuestraHistoria--promo {
+    padding: 50px 50px;
+    text-align: justify;
+    color: rgb(17, 17, 17);
+}
+
+video {
+    height: 75%;
+    border-radius: 75px;
 }
 .container {
     .row {
@@ -188,7 +200,7 @@ footer {
     margin-bottom: 2%;
     border-radius: 10px;
     width: 420px;
-    background: rgb(243, 132, 6);
+    background: rgba(95, 52, 2, 0.411);
     text-align: justify;
     h3 {
         color: white;
