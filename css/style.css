@@ -22,7 +22,6 @@ body {
 
 /*estilo aplicado barra de navegación index */
 nav {
-  margin-top: 0.5%;
   margin-bottom: 0.5%;
   text-align: center;
   font-style: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,11 +84,13 @@ video {
   border-radius: 75px; }
 
 .container .row {
+  padding: 5%;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .container img {
-  width: 45%;
+  width: 60%;
   border-radius: 60px; }
 
 iframe {
@@ -113,9 +114,19 @@ footer {
 .encabezado {
   grid-area: naveg; }
 
+.promo2 {
+  padding: 5%;
+  text-align: justify;
+  color: #1b1b18;
+  background: rgba(214, 214, 208, 0.384); }
+
 .promo1 {
   padding: 5%;
-  text-align: center; }
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+  color: #1b1b18;
+  background: rgba(214, 214, 208, 0.384); }
 
 .desa {
   border-radius: 55%; }
@@ -263,3 +274,8 @@ h5 {
   font-size: 30px;
   padding: 10px;
   margin: 80px; }
+
+.foto {
+  max-width: 60%;
+  min-height: 60%;
+  border-radius: 60px; }

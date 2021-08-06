@@ -25,13 +25,10 @@ body {
 
 /*estilo aplicado barra de navegación index */
 nav {
-    margin-top: 0.5%;
     margin-bottom: 0.5%;
     text-align: center;
     font-style: $typefont;
     background: rgba(182, 55, 33, 0.384);
-    
-
     img {
         width: 100px;
         height: 100px;
@@ -96,11 +93,13 @@ video {
 }
 .container {
     .row {
+        padding: 5%;
         justify-content: flex-start;
         align-items: center;
+        text-align: center;
     }
     img {
-        width: 45%;
+        width: 60%;
         border-radius: 60px;
     }
 }
@@ -126,9 +125,19 @@ footer {
 .encabezado {
     grid-area: naveg;
 }
+.promo2 {
+    padding: 5%;
+    text-align: justify;
+    color: rgb(27, 27, 24);
+    background: rgba(214, 214, 208, 0.384);
+}
 .promo1 {
     padding: 5%;
-    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    color: rgb(27, 27, 24);
+    background: rgba(214, 214, 208, 0.384);
 }
 .desa {
     border-radius: 55%;
@@ -315,4 +324,9 @@ $rifa: rgb(50, 109, 26);
 }
 h5 {
     @include participa(rgb(245, 223, 223), 30px, tomato);
+}
+.foto{
+    max-width: 60%;
+    min-height: 60%;
+    border-radius: 60px;
 }
