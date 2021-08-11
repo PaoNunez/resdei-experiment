@@ -6,119 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio web donde encontrarás almuerzos, desayunos, imagenes etc.">
-    <meta name="keywords"
-        content="descripción del inicio del restaurante, targetas de descuento, comidas, almuerzos ejecutivos, desayunos,">
+    <meta name="keywords" content="Comida ecuatoriana, almuerzos ejecutivos, desayunos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>Resdei Quienes Somos</title>
+    <title>Resdei Inicio</title>
 
 </head>
 
 <body>
-    <!--container con el encabezado de la página copiado de bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="static/img/logo.png" alt="logotipo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!--container con el encabezado de la página copiado de bootstrap--->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="static/img/logotipo.jpeg" alt="logotipo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                            </svg>Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="beneficios.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                            </svg>Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                            </svg>Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desayuno.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v1h.5A1.5 1.5 0 0 1 16 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-.55a2.5 2.5 0 0 1-2.45 2h-8A2.5 2.5 0 0 1 1 12.5V2zm13 10h.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5H14v8zM13 2H2v10.5A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V2z" />
+                            </svg>Nuestras mañanas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="almuerzos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>Por las tardes</a>
+                    </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                            <path
-                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-                        </svg>Inicio<span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quienes_somos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path
-                                d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
-                        </svg>Acerca de</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-receipt-cutoff" viewBox="0 0 16 16">
-                            <path
-                                d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                            <path
-                                d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293 2.354.646zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118l.137-.274z" />
-                        </svg>Menú
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="desayuno.html">Desayunos</a>
-                        <a class="dropdown-item" href="almuerzos.html">Almuerzos</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
-                        </svg>Contactos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="beneficios.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
-                            <path
-                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
-                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                        </svg>Beneficios</a>
-                </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!--bloque de main/bloque#3-->
     <main class="principal">
-        <!--elemento bloque de main-->
-        <div class="principal__nuestraHistoria">
+        <div class="fondo">
+            <hr>
+            <h1>Quienes Somos</h1>
+            <p>"Resdei" te cuenta su historia</p>
+            <!--elemento bloque de main-->
+            <p class="principal__nuestraHistoria--promo">
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <video class="fondo" onloadedmetadata="this.muted=true" autoplay loop>
+                    <source src="./static/img/salon.mp4">
+                </video>
+            </div>
+
+            <div class="col-sm-6">
+                <h2 class="restaurante">El Restaurante </h2>
+                <h6 class="restaurante">Un rincón acogedor</h6>
+                <p class="principal__nuestraHistoria--promo">
+                    Resdei Restaurante, nace en el año de 1997, en el
+                    centro de
+                    la ciudad de Quito, dos
+                    jóvenes
+                    recién casados Gabriel y Lorena, deciden emprender el largo viaje que marcaría sus vidas.
+                    Con apenas 20 y 18 años respectivamente, toman la idea de poner un pequeño lugar de comidas, con
+                    el temor y la incertidumbre de no saber si este reto sería prospero, a pesar de esto toman las
+                    riendas y empiezan a cristalizar su sueño. Años mas tarde se establecen en el norte de la
+                    capital,sector la Floresta, siendo éste un lugar donde podrás saborear a gusto deliciosa comida
+                    hecha con amor.
+                </p>
+            </div>
+        </div>
+        <div class="secundario">
             <div class="row">
+
                 <div class="col-sm-6">
-                    <video onloadedmetadata="this.muted=true" autoplay loop>
-                        <source src="./static/img/CHEF2.mp4">
 
-                </div>
-                <div class="col-sm-8">
-
-                    <p class="principal__nuestraHistoria--promo">Resdei Restaurante, nace en el año de 1997, en el
-                        centro de
-                        la ciudad de Quito, dos
-                        jóvenes
-                        recién casados Gabriel y Lorena, deciden emprender el largo viaje que marcaría sus vidas.
-                        Con apenas 20 y 18 años respectivamente, toman la idea de poner un pequeño lugar de comidas, con
-                        el temor y la incertidumbre de no saber si este reto sería prospero, a pesar de esto toman las
-                        riendas y empiezan a cristalizar su sueño.
+                    <p class="principal__nuestraHistoria--promo">
+                        Elaboramos todo de forma casera, poniendo tambien ese toque
+                        para el sabor justo,
+                        denominándonos así un restaurante artesanal.
+                        Nuestro objetivo es ofrecerte el trato perfecto para que te sientas a gusto a la hora de
+                        servirte tus alimentos;quienes formamos el equipo de trabajo de este espacio intentamos
+                        complacer cada paladar que llega a nosotros.
                     </p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <video onloadedmetadata="this.muted=true" autoplay loop>
-                            <source src="./static/img/chef.mp4">
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="principal__nuestraHistoria--promo"> Años mas tarde se establecen en el norte de la
-                            capital,
-                            sector la Floresta,siendo éste
-                            un lugar
-                            donde podrás saborear a gusto deliciosa comida hecha con amor.
-                            Elaboramos todo de forma casera, poniendo tambien ese toque para el sabor justo,
-                            denominándonos
-                            así un restaurante artesanal.
-                            Nuestro objetivo es ofrecerte el trato perfecto para que te sientas a gusto a la hora de
-                            servirte tus alimentos;quienes formamos el equipo de trabajo de este espacio intentamos
-                            complacer cada paladar que llega a nosotros.
-                        </p>
-                    </div>
+                <div class="col-sm-6">
+                    <video class="fondo" onloadedmetadata="this.muted=true" autoplay loop>
+                        <source src="./static/img/CHEF2.mp4">
+                    </video>
                 </div>
             </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <video class="fondo" onloadedmetadata="this.muted=true" autoplay loop>
+                    <source src="./static/img/la chef.mp4">
+                </video>
+            </div>
+            <div class="col-sm-6">
+                <h2 class="restaurante">La Chef </h2>
+                <h6 class="restaurante">Lore Q.</h6>
+                <p class="principal__nuestraHistoria--promo">
+                    Lore empezó con la cocina a muy temprana edad, dentro de su casa siendo todavía una niña, cuando
+                    llego el momento formalizó su vocación. Desde entonces a acumulado una larga experiencia, dentro
+                    de su propio restauranteque lo fundó junto con Gabriel su esposo, se ha actuaizado
+                    constantemente
+
+                    Ahora en "RESDEI" , busca transmitir en las preparaciones que elabora el amor por su trabajo,
+                    por esta razón su cocina es hecha con ilusión, lo que mas le gusta a Lore es ver los platos
+                    regresar vacios y las sonrisas en el restaurante.
+                </p>
+            </div>
+        </div>
 
     </main>
     <!--container con el pie de página-->
@@ -138,7 +182,12 @@
 
             <p class="pie__texto">Todos los derechos reservados</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
